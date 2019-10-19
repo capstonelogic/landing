@@ -1,0 +1,136 @@
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default;   // Line footer color
+$gray-700: #525f7f !default;   // Line p color
+$gray-800: #32325d !default;   // Line heading color
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #5e72e4 !default;
+$indigo:  #5603ad !default;
+$purple:  #8965e0 !default;
+$pink:    #f3a4b5 !default;
+$red:     #f5365c !default;
+$orange:  #fb6340 !default;
+$yellow:  #ffd600 !default;
+$green:   #2dce89 !default;
+$teal:    #11cdef !default;
+$cyan:    #2bffc6 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "light":      $gray-400,
+  "lighter":    $gray-200,
+  "gray-dark":  $gray-800
+), $colors);
+
+
+$default:       #172b4d !default;
+$primary:       #5e72e4 !default;
+$secondary:     #cdced1 !default;
+$success:       $green !default;
+$info:          $teal !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-500 !default;
+$dark:          $gray-900 !default;
+$darker:        darken($gray-900, 15%) !default;
+
+
+// Fonts
+
+$font-family-base: 'Ubuntu', serif !default;
+$font-family-alt: 'Ubuntu', sans-serif !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xl:                ($font-size-base * 1.5);
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
+$font-size-xs:                ($font-size-base * .75);
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            600 !default;
+$font-weight-extra-bold:      700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$shape-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;  //2.1875rem
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+
+
+// No UI Slider
+
+$noui-target-bg:                  #eceeef !default;
+$noui-target-thickness:           5px !default;
+$noui-target-border-radius:       5px !default;
+$noui-target-border-color:        0 !default;
+$noui-target-box-shadow:          inset 0 1px 2px rgba(90,97,105,.1);
+
+$noui-slider-connect-bg:          $primary !default;
+$noui-slider-connect-disabled-bg: #b2b2b2 !default;
+
+$noui-handle-width:               15px !default;
+$noui-handle-bg:                  theme-color("primary") !default;
+$noui-handle-border:              0 !default;
+$noui-handle-border-radius:       100% !default;
+
+$noui-origin-border-radius:       2px !default;
+
+
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 960px
+);
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           20px !default;
+
+
+
+$message-border: #97C6E3;
+$message-background: #A8DDFD;
+$message-btn-color: $purple;
