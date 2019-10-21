@@ -1,0 +1,144 @@
+
+section {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem 0;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    .nav-pills {
+        .nav-link {
+            opacity: .2;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+
+            &.active {
+                opacity: 1;
+                color: $blue;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#carousel {
+    padding: 0;
+}
+#welcome {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../images/first.jpeg);
+    
+
+    h1 {
+        font-size: 4rem;
+    }
+    a {
+        color: #fff;
+        font-size: 1.4rem;
+        text-shadow: 1px 0px 0px #fff, 0 0 .1em #fff;
+    }
+    .content {
+        position: relative;
+        top: 40%;
+        text-align: center;
+    }
+
+    #vid{
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+#services {
+    background-color: #fff;
+}
+#webteam {
+    background-color: #eee;
+}
+#tools {
+    color: #fff;
+    text-align: center;
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../images/first.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .icon {
+        display: block;
+        max-height: 50px;
+        margin: 1rem auto;
+    }
+}
+#about {
+
+}
+#contact {
+    background-color: #eee;
+}
+
+footer {
+    color: #666;
+    background-color: #333;
+
+    a {
+        color: #666;
+    }
+    .icon {
+        font-size: 1.6rem;
+        margin-right: 1rem;
+
+        &.fa-facebook-square:hover {
+            color: #4b6daa;
+        }
+        &.fa-linkedin:hover {
+            color: #017fb2;
+        }
+    }
+    
+}
+
+@include media-breakpoint-down(sm) {
+
+    section {
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    #welcome {
+        h1 {
+            font-size: 2rem;
+        }
+        a {
+            text-transform: uppercase;
+            font-size: .7rem;
+        }
+    }
+    #services {
+        
+    }
+
+    footer {
+        
+    }
+}
